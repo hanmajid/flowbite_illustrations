@@ -1,0 +1,33 @@
+name: flowbite_illustrations
+description: "Collection of beautiful and well-designed illustrations from Flowbite."
+version: 0.1.0
+homepage: https://github.com/hanmajid/flowbite_illustrations
+issue_tracker: https://github.com/hanmajid/flowbite_illustrations/issues
+repository: https://github.com/hanmajid/flowbite_illustrations
+funding:
+  - https://github.com/sponsors/hanmajid
+
+environment:
+  sdk: ^3.6.0
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_svg: ^2.2.0
+
+dev_dependencies:
+  flutter_lints: ^5.0.0
+  flutter_test:
+    sdk: flutter
+
+topics:
+  - assets
+  - illustrations
+  - ui
+
+screenshots:
+  - description: 'Flowbite illustrations'
+    path: flowbite-illustrations.png
+  - description: 'Flowbite illustrations (dark mode)'
+    path: flowbite-illustrations-dark.png
