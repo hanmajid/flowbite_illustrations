@@ -20,16 +20,14 @@ Import the package in your Flutter file and display your illustration:
 ```dart
 import 'package:flowbite_illustrations/flowbite_illustrations.dart';
 
-/// Alternative 1 - Using Icon widget:
-Icon _icon = Icon(FlowbiteSolidIcons.rocket, size: 24.0);
-Icon _icon = Icon(FlowbiteOutlineIcons.rocket, size: 24.0);
-Icon _icon = Icon(FlowbiteSocialIcons.discord, size: 24.0);
-
-/// Alternative 2 - Using FlowbiteIcon widget:
-Icon _icon = FlowbiteIcon(FlowbiteSolidIcons.rocket);
-Icon _icon = FlowbiteIcon(FlowbiteOutlineIcons.rocket);
-Icon _icon = FlowbiteIcon(FlowbiteSocialIcons.discord);
+FlowbiteIllustration(
+  data: FlowbiteIllustrationData.storeDiscountOpen,
+  color: FlowbiteIllustrationColor.red, // Optional
+  mode: FlowbiteIllustrationMode.dark, // Optional
+)
 ```
+
+*Note*: When using dark mode, it's recommended to use `Color(0xFF111928)` as background.
 
 ## Issues
 
