@@ -51,8 +51,21 @@ class _FlowbiteColorMapper extends ColorMapper {
     String? id,
     String elementName,
     String attributeName,
-    Color color,
+    Color rawColor,
   ) {
+    Color color = rawColor;
+    Map<Color, Color> blueColorMapping = {
+      const Color(0xffE1EFFE): const Color(0xffd6e2fb),
+      const Color(0xff76A9FA): const Color(0xff9ab7f6),
+      const Color(0xff1C64F2): const Color(0xff2563eb),
+      const Color(0xffC3DDFD): const Color(0xffc8d8fa),
+      const Color(0xff1A56DB): const Color(0xff1555e2),
+      const Color(0xffA4CAFE): const Color(0xffC8D8FA),
+    };
+    if (blueColorMapping.containsKey(color)) {
+      color = blueColorMapping[color]!;
+    }
+
     if (illustrationColor == FlowbiteIllustrationColor.rose) {
       Map<Color, Color> colorMapping = {
         const Color(0xffd6e2fb): const Color(0xfff8c8d2),
