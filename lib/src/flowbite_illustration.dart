@@ -53,6 +53,8 @@ class _FlowbiteColorMapper extends ColorMapper {
     String attributeName,
     Color rawColor,
   ) {
+    // Some blue colors are different (taken from different source),
+    // so we need to map them first.
     Color color = rawColor;
     Map<Color, Color> blueColorMapping = {
       const Color(0xffE1EFFE): const Color(0xffd6e2fb),
