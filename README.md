@@ -31,6 +31,21 @@ FlowbiteIllustration(
 
 *Note*: When using dark mode, it's recommended to use `Color(0xFF111928)` as background.
 
+### Custom `ColorMapper`
+
+You can also use custom `ColorMapper` (from [flutter_svg](https://pub.dev/packages/flutter_svg)):
+
+```dart
+import 'package:flutter_svg/flutter_svg.dart';
+
+FlowbiteIllustration(
+  data: FlowbiteIllustrationData.storeDiscountOpen,
+  colorMapper: _CustomColorMapper(),
+)
+```
+
+Please see `_CustomColorMapper` implementation in the example.
+
 ## Issues
 
 For issues, file directly in the [repository](https://github.com/hanmajid/flowbite_illustrations/issues).

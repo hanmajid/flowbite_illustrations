@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - Add `width` and `height` parameters to `FlowbiteIllustration`.
+- Add `colorMapper` parameter to `FlowbiteIllustration`.
 
 ### Fixed
 - Fix changelog link.
