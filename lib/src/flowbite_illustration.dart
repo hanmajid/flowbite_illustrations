@@ -20,11 +20,15 @@ class FlowbiteIllustration extends StatelessWidget {
   final FlowbiteIllustrationData data;
   final FlowbiteIllustrationColor color;
   final FlowbiteIllustrationMode mode;
+  final double? width;
+  final double? height;
 
   const FlowbiteIllustration({
     required this.data,
     this.color = FlowbiteIllustrationColor.blue,
     this.mode = FlowbiteIllustrationMode.light,
+    this.width,
+    this.height,
     super.key,
   });
 
@@ -34,8 +38,8 @@ class FlowbiteIllustration extends StatelessWidget {
       mode == FlowbiteIllustrationMode.light
           ? data.svgString
           : data.svgStringDark,
-      width: 200,
-      height: 200,
+      width: width,
+      height: height,
       colorMapper: _FlowbiteColorMapper(illustrationColor: color),
     );
   }

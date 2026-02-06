@@ -33,6 +33,8 @@ class MainApp extends StatelessWidget {
                             data:
                                 FlowbiteIllustrationData.womanCyberSecurity,
                             color: color,
+                            width: 100,
+                            height: 100,
                           ),
                         ),
                       ),
@@ -44,6 +46,8 @@ class MainApp extends StatelessWidget {
                             data:
                                 FlowbiteIllustrationData.womanCyberSecurity,
                             color: color,
+                            width: 100,
+                            height: 100,
                             mode: FlowbiteIllustrationMode.dark,
                           ),
                         ),

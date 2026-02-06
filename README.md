@@ -24,6 +24,8 @@ FlowbiteIllustration(
   data: FlowbiteIllustrationData.storeDiscountOpen,
   color: FlowbiteIllustrationColor.red, // Optional
   mode: FlowbiteIllustrationMode.dark, // Optional
+  height: 200, // Optional
+  width: 200, // Optional
 )
 ```
 
